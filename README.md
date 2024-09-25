@@ -1,6 +1,9 @@
 # Description
 
-The Google Colab notebook uses the imodels library to interpret rule-based models
+The Google Colab notebook uses the imodels library to interpret these rule-based models:
+- RuleFit rule set (RuleFit)
+- Slipper rule set (SLIPPER)
+- Optimal rule list (CORELS) 
 
-Include the models chosen + data chosen
+
 
