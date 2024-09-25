@@ -1,0 +1,22 @@
+// Decision Rule Visualization for One R
+digraph {
+	rankdir=TB size="8,8"
+	node_0 [label="mean fractal dimension
+≤ 0.05650"]
+	leaf_0_left [label="Value: 0.6264
+Points: 74"]
+	node_0 -> leaf_0_left [label=False]
+	leaf_0_right [label="Value: 0.6588
+Points: 381"]
+	node_0 -> leaf_0_right [label=True]
+	leaf_0_left -> node_1 [style=dashed]
+	node_1 [label="mean fractal dimension
+≤ 0.05185"]
+	leaf_1_left [label="Value: 0.4595
+Points: 5"]
+	node_1 -> leaf_1_left [label=False]
+	leaf_1_right [label="Value: 0.4928
+Points: 69"]
+	node_1 -> leaf_1_right [label=True]
+	leaf_1_left -> node_2 [style=dashed]
+}

@@ -1,0 +1,31 @@
+// Decision Rule Visualization for Corels
+digraph {
+	rankdir=TB size="8,8"
+	node_0 [label="worst radius
+≤ 16.82000"]
+	leaf_0_left [label="Value: 0.6264
+Points: 151"]
+	node_0 -> leaf_0_left [label=False]
+	leaf_0_right [label="Value: 0.9112
+Points: 304"]
+	node_0 -> leaf_0_right [label=True]
+	leaf_0_left -> node_1 [style=dashed]
+	node_1 [label="texture error
+≤ 0.47570"]
+	leaf_1_left [label="Value: 0.0530
+Points: 146"]
+	node_1 -> leaf_1_left [label=False]
+	leaf_1_right [label="Value: 1.0000
+Points: 5"]
+	node_1 -> leaf_1_right [label=True]
+	leaf_1_left -> node_2 [style=dashed]
+	node_2 [label="worst concavity
+≤ 0.19320"]
+	leaf_2_left [label="Value: 0.0205
+Points: 141"]
+	node_2 -> leaf_2_left [label=False]
+	leaf_2_right [label="Value: 0.6000
+Points: 5"]
+	node_2 -> leaf_2_right [label=True]
+	leaf_2_left -> node_3 [style=dashed]
+}

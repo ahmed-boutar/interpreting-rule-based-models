@@ -1,0 +1,73 @@
+// Slipper Model Decision Tree
+digraph {
+	rankdir=TB size="12,12"
+	rule_0 [label="Rule 1
+perimeter error < 3.373 and worst texture < 33.188 and worst perimeter < 101.480" shape=box]
+	yes_0 [label=Yes shape=ellipse]
+	no_0 [label=No shape=ellipse]
+	rule_0 -> yes_0 [label=True]
+	rule_0 -> no_0 [label=False]
+	no_0 -> rule_1 [style=dashed]
+	rule_1 [label="Rule 2
+worst concave points < 0.085" shape=box]
+	yes_1 [label=Yes shape=ellipse]
+	no_1 [label=No shape=ellipse]
+	rule_1 -> yes_1 [label=True]
+	rule_1 -> no_1 [label=False]
+	no_1 -> rule_2 [style=dashed]
+	rule_2 [label="Rule 3
+area error < 49.044 and worst texture < 33.031 and worst perimeter < 102.460 and worst concave points < 0.178" shape=box]
+	yes_2 [label=Yes shape=ellipse]
+	no_2 [label=No shape=ellipse]
+	rule_2 -> yes_2 [label=True]
+	rule_2 -> no_2 [label=False]
+	no_2 -> rule_3 [style=dashed]
+	rule_3 [label="Rule 4
+area error < 48.959 and worst radius < 14.414" shape=box]
+	yes_3 [label=Yes shape=ellipse]
+	no_3 [label=No shape=ellipse]
+	rule_3 -> yes_3 [label=True]
+	rule_3 -> no_3 [label=False]
+	no_3 -> rule_4 [style=dashed]
+	rule_4 [label="Rule 5
+mean radius < 15.311 and area error < 45.406 and worst concave points < 0.110" shape=box]
+	yes_4 [label=Yes shape=ellipse]
+	no_4 [label=No shape=ellipse]
+	rule_4 -> yes_4 [label=True]
+	rule_4 -> no_4 [label=False]
+	no_4 -> rule_5 [style=dashed]
+	rule_5 [label="Rule 6
+perimeter error < 21.980 and compactness error > 0.002 and worst radius < 33.130 and worst smoothness > 0.071" shape=box]
+	yes_5 [label=Yes shape=ellipse]
+	no_5 [label=No shape=ellipse]
+	rule_5 -> yes_5 [label=True]
+	rule_5 -> no_5 [label=False]
+	no_5 -> rule_6 [style=dashed]
+	rule_6 [label="Rule 7
+area error < 45.944 and worst radius < 14.256 and mean concave points < 0.064" shape=box]
+	yes_6 [label=Yes shape=ellipse]
+	no_6 [label=No shape=ellipse]
+	rule_6 -> yes_6 [label=True]
+	rule_6 -> no_6 [label=False]
+	no_6 -> rule_7 [style=dashed]
+	rule_7 [label="Rule 8
+radius error < 0.574 and worst concavity < 0.197" shape=box]
+	yes_7 [label=Yes shape=ellipse]
+	no_7 [label=No shape=ellipse]
+	rule_7 -> yes_7 [label=True]
+	rule_7 -> no_7 [label=False]
+	no_7 -> rule_8 [style=dashed]
+	rule_8 [label="Rule 9
+worst radius < 14.383 and worst perimeter < 97.179 and worst compactness < 0.515" shape=box]
+	yes_8 [label=Yes shape=ellipse]
+	no_8 [label=No shape=ellipse]
+	rule_8 -> yes_8 [label=True]
+	rule_8 -> no_8 [label=False]
+	no_8 -> rule_9 [style=dashed]
+	rule_9 [label="Rule 10
+mean radius < 14.990 and worst concave points < 0.106" shape=box]
+	yes_9 [label=Yes shape=ellipse]
+	no_9 [label=No shape=ellipse]
+	rule_9 -> yes_9 [label=True]
+	rule_9 -> no_9 [label=False]
+}
